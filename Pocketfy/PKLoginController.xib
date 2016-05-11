@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Code Pro LC.otf">
+            <string>Code-Pro-LC</string>
+            <string>Code-Pro-LC</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PKLoginController">
+            <connections>
+                <outlet property="btnSignIn" destination="Z8G-Z5-d9q" id="RED-ED-6PA"/>
+                <outlet property="btnSignUp" destination="v4y-Gv-4ej" id="TT7-UZ-NZ3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4y-Gv-4ej">
+                    <rect key="frame" x="8" y="503" width="304" height="57"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="XS0-Sj-UH3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="26"/>
+                    <state key="normal" title="SIGN UP"/>
+                    <connections>
+                        <action selector="singup:" destination="-1" eventType="touchUpInside" id="NgQ-Ki-nei"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8G-Z5-d9q">
+                    <rect key="frame" x="8" y="438" width="304" height="57"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="CCq-I7-fLj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="26"/>
+                    <state key="normal" title="SIGN IN"/>
+                    <connections>
+                        <action selector="login:" destination="-1" eventType="touchUpInside" id="8XV-p2-dp0"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your password here!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4VV-LC-TC7">
+                    <rect key="frame" x="8" y="110" width="304" height="30"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" secureTextEntry="YES"/>
+                    <connections>
+                        <action selector="hideKeyboard:" destination="-1" eventType="editingDidEndOnExit" id="cPD-v7-OQF"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-MAIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IV9-gm-mXh">
+                    <rect key="frame" x="8" y="8" width="304" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="Vvx-Y9-3L4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Code-Pro-LC" family="Code Pro LC" pointSize="20"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSB-Wq-xRT">
+                    <rect key="frame" x="8" y="78" width="304" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="4mW-0j-V9l"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Code-Pro-LC" family="Code Pro LC" pointSize="20"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your e-mail here!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jZs-ZJ-fgY">
+                    <rect key="frame" x="8" y="40" width="304" height="30"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="done"/>
+                    <connections>
+                        <action selector="hideKeyboard:" destination="-1" eventType="editingDidEndOnExit" id="NV9-On-uZm"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="v4y-Gv-4ej" secondAttribute="bottom" constant="8" id="0yI-GJ-s8F"/>
+                <constraint firstItem="IV9-gm-mXh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="1ME-ck-ieb"/>
+                <constraint firstItem="4VV-LC-TC7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="7jn-gZ-top"/>
+                <constraint firstAttribute="trailing" secondItem="IV9-gm-mXh" secondAttribute="trailing" constant="8" id="9qW-fR-N7H"/>
+                <constraint firstItem="IV9-gm-mXh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="FbZ-iU-tqm"/>
+                <constraint firstItem="v4y-Gv-4ej" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Hyt-uK-ixY"/>
+                <constraint firstItem="QSB-Wq-xRT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="J4p-eW-V7d"/>
+                <constraint firstAttribute="trailing" secondItem="v4y-Gv-4ej" secondAttribute="trailing" constant="8" id="O9p-2o-o7d"/>
+                <constraint firstAttribute="trailing" secondItem="jZs-ZJ-fgY" secondAttribute="trailing" constant="8" id="Q96-O7-3b8"/>
+                <constraint firstItem="Z8G-Z5-d9q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="St4-6K-0BP"/>
+                <constraint firstItem="4VV-LC-TC7" firstAttribute="top" secondItem="QSB-Wq-xRT" secondAttribute="bottom" constant="8" id="T4G-r2-6cZ"/>
+                <constraint firstAttribute="trailing" secondItem="4VV-LC-TC7" secondAttribute="trailing" constant="8" id="Ydx-xl-ZeT"/>
+                <constraint firstAttribute="trailing" secondItem="QSB-Wq-xRT" secondAttribute="trailing" constant="8" id="YkH-LX-pMq"/>
+                <constraint firstItem="jZs-ZJ-fgY" firstAttribute="top" secondItem="IV9-gm-mXh" secondAttribute="bottom" constant="8" id="dxA-vF-p3k"/>
+                <constraint firstAttribute="trailing" secondItem="Z8G-Z5-d9q" secondAttribute="trailing" constant="8" id="g1A-ih-9Qf"/>
+                <constraint firstItem="jZs-ZJ-fgY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="ikb-Ld-Hqf"/>
+                <constraint firstItem="v4y-Gv-4ej" firstAttribute="top" secondItem="Z8G-Z5-d9q" secondAttribute="bottom" constant="8" id="tZr-09-mtu"/>
+                <constraint firstItem="QSB-Wq-xRT" firstAttribute="top" secondItem="jZs-ZJ-fgY" secondAttribute="bottom" constant="8" id="wdR-uf-gqE"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="100" y="433"/>
+        </view>
+    </objects>
+</document>

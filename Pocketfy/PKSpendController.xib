@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PKSpendController">
+            <connections>
+                <outlet property="btnUpload" destination="Ucz-dw-vUe" id="qhb-uW-yJJ"/>
+                <outlet property="tableView" destination="O7k-66-OFf" id="R2Z-54-nr1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="126" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="O7k-66-OFf">
+                    <rect key="frame" x="8" y="0.0" width="304" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Sje-Ru-5vN"/>
+                        <outlet property="delegate" destination="-1" id="SpY-ft-iTT"/>
+                    </connections>
+                </tableView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ucz-dw-vUe">
+                    <rect key="frame" x="272" y="520" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="ER1-z9-ZX3"/>
+                        <constraint firstAttribute="height" constant="40" id="je2-VO-Oef"/>
+                    </constraints>
+                    <state key="normal" image="upload.png">
+                        <attributedString key="attributedTitle"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="O7k-66-OFf" secondAttribute="trailing" constant="8" id="F3Y-OX-uTQ"/>
+                <constraint firstAttribute="bottom" secondItem="O7k-66-OFf" secondAttribute="bottom" id="Geh-XA-Uwo"/>
+                <constraint firstAttribute="bottom" secondItem="Ucz-dw-vUe" secondAttribute="bottom" constant="8" id="JyO-DL-VZv"/>
+                <constraint firstAttribute="trailing" secondItem="Ucz-dw-vUe" secondAttribute="trailing" constant="8" id="Rzx-29-zyL"/>
+                <constraint firstItem="O7k-66-OFf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Xmq-Kb-JPB"/>
+                <constraint firstItem="O7k-66-OFf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="vR8-mN-ti4"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="upload.png" width="512" height="512"/>
+    </resources>
+</document>
